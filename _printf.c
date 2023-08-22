@@ -1,6 +1,11 @@
 #include "main.h"
 
-/***/
+/**
+ * _printf - The printf function clone
+ * @format: a constant pointer to a char
+ *
+ * Return: size of the printed args
+ */
 
 int _printf(const char *format, ...)
 {
