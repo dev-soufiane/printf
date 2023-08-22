@@ -1,6 +1,11 @@
 #include "main.h"
 
-/***/
+/**
+ * print_string - Prints a string
+ * @s: string pointer
+ *
+ * Return: size of the string
+ */
 
 int print_string(char *s)
 {
