@@ -5,7 +5,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-/*Functions prototypes*/
+/* Functions prototypes */
 
 int print_char(char c);
 int print_string(char *s);
