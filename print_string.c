@@ -13,8 +13,8 @@ int print_string(char *s)
 
 	if (s == NULL)
 	{
-		write(1, "(null)", 6);
-		return;
+		strlen += write(1, "(null)", 6);
+		return (strlen);
 
 	}
 
