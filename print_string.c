@@ -2,25 +2,25 @@
 
 /**
  * print_string - Prints a string
- * @s: string pointer
+ * @some_text: string pointer
  *
  * Return: size of the string
  */
 
-int print_string(char *s)
+int print_string(char *some_text)
 {
 	int strlen = 0;
 
-	if (s == NULL)
+	if (some_text == NULL)
 	{
 		strlen += write(1, "(null)", 6);
 		return (strlen);
 
 	}
 
-	while (*(s + strlen))
+	while (*(some_text + strlen))
 	{
-		write(1, s + strlen, 1);
+		write(1, some_text + strlen, 1);
 		strlen++;
 	}
 

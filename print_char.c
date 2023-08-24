@@ -2,14 +2,14 @@
 
 /**
  * print_char - Prints a character
- * @c: char
+ * @any_char: char
  *
  * Return: Number of chars printed
  */
 
-int print_char(char c)
+int print_char(char any_char)
 {
-	write(1, &c, 1);
+	write(1, &any_char, 1);
 
 	return (1);
 }

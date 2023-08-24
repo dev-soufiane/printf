@@ -9,47 +9,28 @@
 
 int _printf(const char *format, ...)
 {
-	va_list args;
-	int len;
-	char *str;
-	char c;
+	va_list combo;
+	char charg;
+	char *data;
+	int len = 0;
 
-	len = 0;
-	va_start(args, format);
-	if (!format || !*(format + 0))
+	va_start(combo, format);
+
+	if (!format)
 		return (-1);
+
 	while (*format)
 	{
-		if (*format == '%')
-		{
-			format++;
-			switch (*format)
-			{
-				case 'c':
-					c = va_arg(args, int);
-					len += print_char(c);
-					break;
-				case 's':
-					str = va_arg(args, char *);
-					len += print_string(str);
-					break;
-				case '%':
-					len += print_char('%');
-					break;
-				default:
-					len += print_char('%');
-					len += print_char(*format);
-					break;
-			}
-			format++;
-		}
-		else
-		{
-			print_char(*format);
-			len += 1;
-			format++;
-		}
+		len += (*format == '%') ? (
+			format++,
+			(*format == 'c') ? (charg = va_arg(combo, int), print_char(charg))
+			: (*format == 's') ? (data = va_arg(combo, char *), print_string(data))
+			: (*format == '%') ? print_char('%')
+			: (print_char('%'), (*format ? print_char(*format) : 0))
+		)
+		: (print_char(*format));
+		format++;
 	}
-	va_end(args);
+	va_end(combo);
 	return (len);
 }
