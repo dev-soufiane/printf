@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 
 	va_start(combo, format);
 
-	if (!format)
+	if (!format || !*(format + 0))
 		return (-1);
 
 	while (*format)
