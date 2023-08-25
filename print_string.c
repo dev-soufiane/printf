@@ -2,7 +2,7 @@
 
 /**
  * print_string - Prints a string
- * @some_text: string pointer
+ * @some_text: the  string pointer
  *
  * Return: the size of the string
  */
