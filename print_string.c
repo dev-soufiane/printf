@@ -4,7 +4,7 @@
  * print_string - Prints a string
  * @some_text: string pointer
  *
- * Return: size of the string
+ * Return: the size of the string
  */
 
 int print_string(char *some_text)
