@@ -11,6 +11,8 @@ int _printf(const char *format, ...)
 {
 	va_list combo;
 	int digi;
+	char chr;
+	char *strarg;
 	int len = 0;
 
 	va_start(combo, format);
@@ -34,10 +36,12 @@ int _printf(const char *format, ...)
 				switch (*format)
 				{
 					case 'c':
-						len += print_char(va_arg(combo, int));
+						chr = (va_arg(combo, int));
+						len += print_char(chr);
 						break;
 					case 's':
-						len += print_string(va_arg(combo, char *));
+						strarg = (va_arg(combo, char *));
+						len += print_string(strarg);
 						break;
 					case 'd':
 					case 'i':

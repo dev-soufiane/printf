@@ -9,6 +9,10 @@
 
 void check_number(int n)
 {
+	int i;
+	int digits[12];
+	int num_len = 0;
+
 	if (n == INT_MIN)
 	{
 		print_char('-');
@@ -20,9 +24,6 @@ void check_number(int n)
 		print_char('-');
 		n = -n;
 	}
-	int digits[12];
-	int num_len = 0;
-
 	if (n == 0)
 	{
 		digits[num_len++] = 0;
@@ -35,8 +36,6 @@ void check_number(int n)
 			n /= 10;
 		}
 	}
-	int i;
-
 	for (i = num_len - 1; i >= 0; i--)
 	{
 		print_char(digits[i] + '0');
