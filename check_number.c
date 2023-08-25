@@ -2,7 +2,7 @@
 
 /**
  * check_number - Print the digits of an integer and handle special cases
- * @n: The integer to be checked and printed
+ * @n: The integer needs to be checked and printed
  *
  * Return: Nothing
  */
