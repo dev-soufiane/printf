@@ -4,7 +4,7 @@
  * print_char - Prints a character
  * @any_char: char
  *
- * Return: Number of chars printed
+ * Return: The number of chars printed
  */
 
 int print_char(char any_char)
