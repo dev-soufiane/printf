@@ -4,7 +4,7 @@
  * _printf - The printf function clone
  * @format: a constant pointer to a char
  *
- * Return: size of the printed args
+ * Return: the size of the printed args
  */
 
 int _printf(const char *format, ...)
