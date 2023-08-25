@@ -4,7 +4,7 @@
  * getNumberLength - Count digits in an integer
  * @myNum: The integer to be counted
  *
- * Return: Number of digits
+ * Return: The number of digits
  */
 
 int getNumberLength(int myNum)
