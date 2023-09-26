@@ -33,7 +33,7 @@ To get started with the Printf Project, follow these steps:
 4. Test your `printf` implementation thoroughly to ensure correctness.
 5. Document your code and adhere to ALX School's coding standards.
 
-### Contributing 🤝
+### Contributing 👨‍💻
 
 We encourage ALX School learners to contribute to this project by improving the `printf` implementation, adding test cases, enhancing documentation, or addressing issues. To contribute, follow these steps:
 
@@ -48,4 +48,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 We appreciate your interest in the Printf Project, but please remember that it should not be copied or reproduced for academic purposes.
 
-Happy coding! 🖨️
+Happy coding! 🎉
